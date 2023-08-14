@@ -1,0 +1,17 @@
+Hey!
+
+There are some options here that you can choose. Below you can read about every one:
+Create. You can add a new habit. For that you should write name, description, category and frequency of your new habit
+Habits can belong to sport, study or hobby habits. Then you have to choose a frequency of a habit: daily (1) or weekly(7).
+
+Complete. When a habit is added, you can complete it. When you choose this option, you will see a list of your added habits.
+
+Analyse. Here you can see how many times has your habit been completed. You should also choose a habit from a list.
+
+Delete. If you don't want to get a new habit, you can just delete it from a list.
+
+List of habits. Here you can see the whole list of your habit with description, category and frequency.
+
+Get help. Here we are!
+
+Exit. To quit the program.
