@@ -1,5 +1,5 @@
 import sqlite3
-from datetime import date, datetime
+from datetime import date
 
 
 def get_db(name="main.db"):
