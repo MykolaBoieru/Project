@@ -29,25 +29,34 @@ def cli():
             habit.store(db)
 
         elif choice == "Complete":
+            try:
+                name = questionary.select("Which habit do you want to complete?",
+                                          choices=list_habits(db="main.db")).ask()
 
-            name = questionary.select("Which habit do you want to complete?",
-                                      choices=list_habits(db="main.db")).ask()
-
-            habit = Habit(name, "no description")
-            habit.increment()
-            habit.add_event(db)
+                habit = Habit(name, "no description")
+                habit.increment()
+                habit.add_event(db)
+            except ValueError:
+                print("You have to add a habit first!")
 
         elif choice == "Analyse":
-            name = questionary.select("Which habit do you want to see?",
-                                      choices=list_habits(db="main.db")).ask()
-            count = calculate_count(db, name)
-            print(f"{name} has been completed {count} times")
+            try:
+                name = questionary.select("Which habit do you want to see?",
+                                          choices=list_habits(db="main.db")).ask()
+                count = calculate_count(db, name)
+                print(f"{name} has been completed {count} times")
+            except ValueError:
+                print("You have to add a habit first!")
 
         elif choice == "Delete":
-            name = questionary.select("Which habit do you want to delete?",
-                                      choices=list_habits(db="main.db")).ask()
-            habit = Habit(name, "no description")
-            habit.delete(db, name)
+            try:
+
+                name = questionary.select("Which habit do you want to delete?",
+                                          choices=list_habits(db="main.db")).ask()
+                habit = Habit(name, "no description")
+                habit.delete(db, name)
+            except ValueError:
+                print("You have to add a habit first!")
 
         elif choice == "List of habits":
             print(get_table_of_habits(db))
