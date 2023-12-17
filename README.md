@@ -3,6 +3,8 @@
 It is my first programming language project. This program was created without using ChatGPT as part of my Python learning at IU Academy.
 The app is not completed and with time will be updated and improved.
 
+Grade 90/100
+
 ## Requirements
 
 1. Python 3.7 or higher
