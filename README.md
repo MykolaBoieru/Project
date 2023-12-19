@@ -1,6 +1,6 @@
 # My Habit Tracker App 
 
-It is my first programming language project. This program was created without using ChatGPT as part of my Python learning at IU Academy.
+It is my first programming language project. This program was created without using ChatGPT as part of my Python study at IU International University of Applied Sciences.
 The app is not completed and with time will be updated and improved.
 
 Grade 90/100
